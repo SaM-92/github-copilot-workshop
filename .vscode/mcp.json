@@ -1,1 +1,32 @@
-test
+{
+    "inputs": [
+    ],
+    "servers": {
+          "my-mcp-server1": {
+             "command": "</PATH/TO/uv>",
+             "args": [
+                "--directory",
+                "</PATH/TO/mcp-workshop>",
+                "run",
+                "server.py"
+             ]
+          },
+          "my-mcp-server2": {
+             "command": "</PATH/TO/uv>",
+             "args": [
+                "--directory",
+                "</PATH/TO/mcp-workshop>",
+                "run",
+                "server2.py"
+             ]
+          },
+          "apify": {
+                "type": "http",
+                "url": "https://actors-mcp-server.apify.actor/sse",
+                "headers": {
+                    "Authorization": "Bearer <apify_api_key>",
+                    "X-Tool-Name": "rag-web-browser"
+                }
+            }
+    }
+    }
