@@ -36,6 +36,12 @@ Ensure you have Python 3.12 installed.
 ```bash
 pip install uv
 ```
+
+Install MCP requirements:
+```bash
+pip install mcp[cli]>=1.6.0
+```
+
 - Get your Apify API key from [Apify MCP Server page](https://apify.com/apify/actors-mcp-server)
 
 
