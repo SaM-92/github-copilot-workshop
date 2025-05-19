@@ -32,9 +32,12 @@ This repository provides the following MCP tools:
 
 Ensure you have Python 3.12 installed.
 
-Install `uv` if not already installed:
+- Install `uv` if not already installed:
 ```bash
 pip install uv
 ```
+- Get your Apify API key from [Apify MCP Server page](https://apify.com/apify/actors-mcp-server)
+
+
 
 
